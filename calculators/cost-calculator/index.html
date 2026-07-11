@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Water Softener Cost Calculator (2026) — SoftWaterSystemCost</title>
+<meta name="description" content="Free water softener cost calculator: household size + hardness → itemized installed cost range. Built on 2026 retail and labor data. Embeddable.">
+<link rel="canonical" href="https://softwatersystemcost.com/calculators/cost-calculator/">
+<meta property="og:title" content="Water Softener Cost Calculator (2026) — SoftWaterSystemCost">
+<meta property="og:description" content="Free water softener cost calculator: household size + hardness → itemized installed cost range. Built on 2026 retail and labor data. Embeddable.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://softwatersystemcost.com/calculators/cost-calculator/">
+<link rel="icon" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Water Softener Cost Calculator", "url": "https://softwatersystemcost.com/calculators/cost-calculator/", "applicationCategory": "UtilityApplication", "operatingSystem": "Web"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why a range and not one number?", "acceptedAnswer": {"@type": "Answer", "text": "Because the plumbing decides the final third of the bill. A range built from your inputs is honest; a single number is a sales tactic."}}, {"@type": "Question", "name": "Does the estimate include a loop run?", "acceptedAnswer": {"@type": "Answer", "text": "No &mdash; it assumes a loop exists. Add $600&ndash;$2,000 if one has to be cut in. The full cost guide explains how to tell if you have one."}}, {"@type": "Question", "name": "Where does the hardness lookup come from?", "acceptedAnswer": {"@type": "Answer", "text": "USGS county-level survey data, averaged by ZIP prefix. It&rsquo;s a starting point &mdash; your utility&rsquo;s annual water report has your exact number."}}, {"@type": "Question", "name": "Can I use this for a well?", "acceptedAnswer": {"@type": "Answer", "text": "Partially. Wells often need iron pre-treatment ahead of the softener, which this tool doesn&rsquo;t price. Test your water first, then size."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://softwatersystemcost.com/"}, {"@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://softwatersystemcost.com/calculators/"}, {"@type": "ListItem", "position": 3, "name": "Cost calculator", "item": "https://softwatersystemcost.com/calculators/cost-calculator/"}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="brand-name">SoftWater<em>SystemCost</em></span>
+      <span class="brand-tag">Independent cost data</span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="nav-burger" aria-label="Open menu"><span></span><span></span><span></span></label>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/water-softener-system-cost/">Cost Guides</a>
+      <a href="/brands/">Brands</a>
+      <a href="/calculators/cost-calculator/">Calculators</a>
+      <a href="/water-softener-maintenance-cost/">Maintenance</a>
+      <a class="nav-pill" href="/about/">About</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <article class="col-wide">
+    <div class="col" style="margin:40px auto 24px">
+      <nav aria-label="Breadcrumb" class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/calculators/">Calculators</a> &rsaquo; Cost calculator</nav>
+      <h1>Water Softener Cost Calculator</h1>
+      <span class="stamp">Data updated &middot; Jul 2026</span>
+    </div>
+    <div class="col">
+      <div class="calc-titlebar"><span class="t-left">Cost estimator</span><span class="t-right">Live estimate</span></div>
+      <div data-calc data-variant="full"></div>
+    </div>
+    <div class="col">
+      <h2>How this calculator works</h2>
+      <p>Sizing first: people &times; 75 gallons/day &times; your hardness (gpg) &times; a 7-day reserve gives weekly grain demand, which maps to a 24k, 32k, 48k, or 64k tier. Each tier carries a unit price range from 2026 retail surveys; labor and fittings come from Angi/HomeAdvisor national data. The output is a range, never a point &mdash; because your plumbing, not the math, sets the final number.</p>
+      <p style="margin:0">The estimate defaults to no loop. Have one? Toggle it &mdash; that single item is worth <span class="fig">$600&ndash;$2,000</span>. The full explanation is in the <a href="/water-softener-system-cost/">cost guide</a>.</p>
+
+      <h2>What actually drives the number</h2>
+      <p>Three inputs matter far more than brand: hardness (it sets capacity), household size (it sets flow), and whether a loop exists (it sets labor). Everything else &mdash; smart valves, app monitoring, tank color &mdash; is trim. When a quote is thousands above this calculator&rsquo;s high end, the gap is sales cost, and you&rsquo;re allowed to ask what it buys.</p>
+      <p style="margin:0">Hardness varies more than people expect: 3 gpg in New England, 20+ in the Southwest. Look yours up by ZIP in the calculator, or pull your utility&rsquo;s water report &mdash; it&rsquo;s on page one.</p>
+
+      <h2>Embed this calculator</h2>
+      <p style="margin:0 0 8px;font-size:17px">Free to embed with attribution. Paste this where you want it to appear:</p>
+      <pre class="snippet">&lt;iframe src="https://softwatersystemcost.com/embed/cost-calculator/"
+  width="100%" height="560" style="border:0" loading="lazy"
+  title="Water Softener Cost Calculator"&gt;&lt;/iframe&gt;</pre>
+
+      <h2 style="margin-bottom:8px">Frequently asked</h2><div class="faq"><details><summary>Why a range and not one number?</summary><p>Because the plumbing decides the final third of the bill. A range built from your inputs is honest; a single number is a sales tactic.</p></details><details><summary>Does the estimate include a loop run?</summary><p>No &mdash; it assumes a loop exists. Add $600&ndash;$2,000 if one has to be cut in. The full cost guide explains how to tell if you have one.</p></details><details><summary>Where does the hardness lookup come from?</summary><p>USGS county-level survey data, averaged by ZIP prefix. It&rsquo;s a starting point &mdash; your utility&rsquo;s annual water report has your exact number.</p></details><details><summary>Can I use this for a well?</summary><p>Partially. Wells often need iron pre-treatment ahead of the softener, which this tool doesn&rsquo;t price. Test your water first, then size.</p></details></div>
+    </div>
+<div id="sources" class="sources col" style="margin-top:64px">
+  <h2>Where these numbers come from</h2>
+  <ol><li>Retail pricing survey, metered softeners by grain tier, Jul 2026.</li><li>Angi / HomeAdvisor installation labor data, 2026.</li><li>USGS county-level hardness data (ZIP lookup source).</li><li>AWWA residential water use benchmarks (75 gal/person/day).</li></ol>
+</div>
+  </article>
+</main>
+<script type="module" src="/assets/calculator.js"></script>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <a class="f-brand" href="/">SoftWater<em>SystemCost</em></a>
+        <p class="f-mission">The line-item numbers dealers don&rsquo;t publish &mdash; itemized, sourced, and kept current.</p>
+      </div>
+      <a class="btn f-cta" href="/calculators/cost-calculator/">Get your number &rarr;</a>
+    </div>
+    <div class="footer-grid">
+      <div>
+        <div class="f-col-title">Editorial promise</div>
+        <div class="f-checks">
+          <div><span>&#10003;</span> Every figure traceable to a listed source</div>
+          <div><span>&#10003;</span> We don&rsquo;t sell or install systems</div>
+          <div><span>&#10003;</span> No sponsored posts, no dealer advertising</div>
+          <div><span>&#10003;</span> Figures re-checked twice a year</div>
+        </div>
+      </div>
+      <div>
+        <div class="f-col-title">Cost guides</div>
+        <div class="f-links">
+          <a href="/water-softener-system-cost/">Water softener cost</a>
+          <a href="/water-softener-installation-cost/">Installation cost</a>
+          <a href="/water-softener-maintenance-cost/">Maintenance costs</a>
+          <a href="/brands/">Brand price expos&eacute;s</a>
+        </div>
+      </div>
+      <div>
+        <div class="f-col-title">Calculators</div>
+        <div class="f-links">
+          <a href="/calculators/cost-calculator/">Cost calculator</a>
+          <a href="/calculators/">All calculators</a>
+          <a href="/data/water-hardness-study/">Hardness data study</a>
+        </div>
+      </div>
+      <div>
+        <div class="f-col-title">Company</div>
+        <div class="f-links">
+          <a href="/about/">About</a>
+          <a href="/about/#standards">Editorial standards</a>
+          <a href="/about/#contact">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="/how-we-make-money/">How we make money</a>
+        </div>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <div class="c">&copy; 2026 SoftWaterSystemCost &middot; Independent publisher &middot; 1635 S Ridgewood Ave, 2nd Floor Ste 201, Daytona Beach, FL 32119</div>
+      <div class="c">Some links are affiliate links &middot; <a href="/how-we-make-money/">how we make money</a></div>
+      <div class="stamp-f">Data reviewed &middot; Jul 2026</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

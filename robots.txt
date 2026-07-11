@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /templates/
+Disallow: /styleguide/
+Disallow: /embed/
+Disallow: /pick/
+
+Sitemap: https://softwatersystemcost.com/sitemap.xml
