@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Water Softener Cost Calculator (2026) — T5 Tool Page</title>
+<link rel="icon" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&amp;family=Source+Sans+3:wght@400;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #FAFAF7; color: #16303F; font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif; font-size: 18px; line-height: 1.65; }
+  a { color: #16303F; } a:hover { color: #1F7A5C; }
+  :focus-visible { outline: 2px solid #1F7A5C; outline-offset: 2px; }
+</style>
+</helmet>
+<div data-screen-label="Tool Page T5">
+  <dc-import name="SiteHeader" hint-size="100%,75px"></dc-import>
+
+  <main style="padding: 0 24px;">
+    <article style="max-width: 920px; margin: 0 auto;">
+      <div style="max-width: 720px; margin: 40px auto 24px auto;">
+        <nav aria-label="Breadcrumb" style="font-size: 14px; color: #5B6B75;"><a href="Homepage.dc.html" style="color: #5B6B75;">Home</a> › <a href="#" style="color: #5B6B75;">Calculators</a> › Cost calculator</nav>
+        <h1 style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 700; font-size: 44px; line-height: 1.1; letter-spacing: -0.8px; margin: 16px 0 8px 0;">Water Softener Cost Calculator</h1>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #5B6B75; border: 1px solid #D9DED9; border-radius: 999px; background: #FFFFFF; padding: 4px 12px;">Data updated · Jul 2026</span>
+      </div>
+
+      <!-- Calculator immediately -->
+      <div style="max-width: 720px; margin: 0 auto;">
+        <dc-import name="Embed Calculator" hint-size="100%,480px"></dc-import>
+      </div>
+
+      <div style="max-width: 720px; margin: 0 auto;">
+        <h2 style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 600; font-size: 30px; letter-spacing: -0.4px; margin: 64px 0 16px 0;">How this calculator works</h2>
+        <p style="margin: 0 0 16px 0;">Sizing first: people × 75 gallons/day × your hardness (gpg) × a 7-day reserve gives weekly grain demand, which maps to a 24k, 32k, 48k, or 64k tier. Each tier carries a unit price range from 2026 retail surveys; labor and fittings come from Angi/HomeAdvisor national data. The output is a range, never a point — because your plumbing, not the math, sets the final number.</p>
+        <p style="margin: 0;">The estimate assumes an existing softener loop. No loop? Add <span style="font-family: 'IBM Plex Mono', monospace; font-size: 0.95em; font-variant-numeric: tabular-nums;">$600–$2,000</span> — the full explanation is in the <a href="Pillar Template.dc.html">cost guide</a>.</p>
+
+        <h2 style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 600; font-size: 30px; letter-spacing: -0.4px; margin: 64px 0 16px 0;">What actually drives the number</h2>
+        <p style="margin: 0 0 16px 0;">Three inputs matter far more than brand: hardness (it sets capacity), household size (it sets flow), and whether a loop exists (it sets labor). Everything else — smart valves, app monitoring, tank color — is trim. When a quote is thousands above this calculator's high end, the gap is sales cost, and you're allowed to ask what it buys.</p>
+        <p style="margin: 0;">Hardness varies more than people expect: 3 gpg in New England, 20+ in the Southwest. Look yours up by ZIP in the calculator, or pull your utility's water report — it's on page one.</p>
+
+        <!-- Embed snippet -->
+        <h2 style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 600; font-size: 30px; letter-spacing: -0.4px; margin: 64px 0 16px 0;">Embed this calculator</h2>
+        <p style="margin: 0 0 8px 0; font-size: 17px;">Free to embed with attribution. Paste this where you want it to appear:</p>
+        <pre style="background: #FFFFFF; border: 1px solid #D9DED9; padding: 16px 24px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #16303F; overflow-x: auto; margin: 0; white-space: pre-wrap;">&lt;iframe src="https://softwatersystemcost.com/embed/cost-calculator/"
+  width="100%" height="560" style="border:0" loading="lazy"
+  title="Water Softener Cost Calculator"&gt;&lt;/iframe&gt;</pre>
+
+        <h2 style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 600; font-size: 30px; letter-spacing: -0.4px; margin: 64px 0 8px 0;">Frequently asked</h2>
+        <sc-for list="{{ faqs }}" as="q" hint-placeholder-count="4">
+          <details style="border-bottom: 1px solid #D9DED9; padding: 12px 0;">
+            <summary style="font-weight: 600; font-size: 18px; cursor: pointer;">{{ q.q }}</summary>
+            <p style="margin: 8px 0 0 0; font-size: 17px;">{{ q.a }}</p>
+          </details>
+        </sc-for>
+
+        <div id="sources" style="margin: 64px 0 0 0; border-top: 1px solid #D9DED9; padding-top: 16px;">
+          <h2 style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 600; font-size: 22px; margin: 0 0 8px 0;">Where these numbers come from</h2>
+          <ol style="margin: 0; padding-left: 24px; font-size: 15px; color: #5B6B75; display: flex; flex-direction: column; gap: 4px;">
+            <li>Retail pricing survey, metered softeners by grain tier, Jul 2026.</li>
+            <li>Angi / HomeAdvisor installation labor data, 2026.</li>
+            <li>USGS county-level hardness data (ZIP lookup source).</li>
+            <li>AWWA residential water use benchmarks (75 gal/person/day).</li>
+          </ol>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <dc-import name="SiteFooter" hint-size="100%,320px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      faqs: [
+        { q: "Why a range and not one number?", a: "Because the plumbing decides the final third of the bill. A range built from your inputs is honest; a single number is a sales tactic." },
+        { q: "Does the estimate include a loop run?", a: "No — it assumes a loop exists. Add $600–$2,000 if one has to be cut in. The full cost guide explains how to tell if you have one." },
+        { q: "Where does the hardness lookup come from?", a: "USGS county-level survey data, averaged by ZIP prefix. It's a starting point — your utility's annual water report has your exact number." },
+        { q: "Can I use this for a well?", a: "Partially. Wells often need iron pre-treatment ahead of the softener, which this tool doesn't price. Test your water first, then size." },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

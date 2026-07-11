@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>How Hard Is America's Water? County-Level Study (2026) — T6</title>
+<link rel="icon" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&amp;family=Source+Sans+3:wght@400;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #FAFAF7; color: #16303F; font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif; font-size: 18px; line-height: 1.65; }
+  a { color: #16303F; } a:hover { color: #1F7A5C; }
+  :focus-visible { outline: 2px solid #1F7A5C; outline-offset: 2px; }
+</style>
+</helmet>
+<div data-screen-label="Data Study T6">
+  <dc-import name="SiteHeader" hint-size="100%,75px"></dc-import>
+
+  <main style="padding: 0 24px;">
+    <article style="max-width: 920px; margin: 0 auto;">
+      <div style="margin: 40px 0 0 0;">
+        <nav aria-label="Breadcrumb" style="font-size: 14px; color: #5B6B75;"><a href="Homepage.dc.html" style="color: #5B6B75;">Home</a> › Data studies › Water hardness</nav>
+        <h1 style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 700; font-size: 44px; line-height: 1.1; letter-spacing: -0.8px; margin: 16px 0 8px 0;">How Hard Is America's Water? A County-Level Analysis</h1>
+        <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center; font-size: 14px; color: #5B6B75;">
+          <span>By <a href="About Template.dc.html" style="color: #5B6B75;">Robert Miller</a> · Published June 2026</span>
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid #D9DED9; border-radius: 999px; background: #FFFFFF; padding: 4px 12px;">Data updated · Jun 2026</span>
+        </div>
+      </div>
+
+      <!-- Key findings box -->
+      <div style="margin: 24px 0 0 0; background: #FFFFFF; border: 1px solid #D9DED9; border-left: 3px solid #E8A13D; border-radius: 10px; padding: 24px;">
+        <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5B6B75; margin-bottom: 8px;">Key findings</div>
+        <ul style="margin: 0; padding-left: 24px; font-size: 17px; display: flex; flex-direction: column; gap: 8px;">
+          <li><span style="font-family: 'IBM Plex Mono', monospace; font-size: 0.95em; font-variant-numeric: tabular-nums;">72%</span> of U.S. counties have water classified hard or very hard (over 7 gpg).</li>
+          <li>The hardest region averages <span style="font-family: 'IBM Plex Mono', monospace; font-size: 0.95em; font-variant-numeric: tabular-nums;">18 gpg</span> — six times the softest, which changes softener sizing by two full tiers.</li>
+          <li>Hardness alone shifts typical installed cost by <span style="font-family: 'IBM Plex Mono', monospace; font-size: 0.95em; font-variant-numeric: tabular-nums;">$400–$900</span> between regions, before any dealer markup.</li>
+        </ul>
+      </div>
+
+      <!-- Chart: average hardness by region -->
+      <div style="margin: 64px 0 0 0; background: #FFFFFF; border: 1px solid #D9DED9; padding: 24px;">
+        <h2 style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 600; font-size: 22px; margin: 0 0 16px 0;">Average water hardness by region (gpg)</h2>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <sc-for list="{{ regions }}" as="r" hint-placeholder-count="6">
+            <div style="display: grid; grid-template-columns: 140px 1fr 56px; gap: 16px; align-items: center;">
+              <div style="font-size: 15px; color: #16303F; text-align: right;">{{ r.name }}</div>
+              <div style="height: 24px; background: #F5F6F3; position: relative;">
+                <div style="position: absolute; inset: 0 auto 0 0; width: {{ r.pct }}; background: {{ r.color }};"></div>
+              </div>
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-variant-numeric: tabular-nums;">{{ r.gpg }}</div>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+          <div style="font-size: 11px; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.08em; text-transform: uppercase; color: #5B6B75;">Chart: SoftWaterSystemCost.com · USGS data</div>
+          <a href="#" style="font-size: 14px; color: #5B6B75;">Download chart image ↓</a>
+        </div>
+      </div>
+
+      <div style="max-width: 720px; margin: 0 auto;">
+        <h2 style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 600; font-size: 30px; letter-spacing: -0.4px; margin: 64px 0 16px 0;">What this means for your quote</h2>
+        <p style="margin: 0;">Hardness sets softener capacity, and capacity sets price tier. A Phoenix household at 18 gpg needs roughly double the grain capacity of a Boston household at 3 gpg — a <span style="font-family: 'IBM Plex Mono', monospace; font-size: 0.95em; font-variant-numeric: tabular-nums;">$400–$900</span> hardware difference before anyone marks anything up. If a dealer quotes the same system to every house on the street, that's a script, not an assessment.</p>
+
+        <h2 style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 600; font-size: 30px; letter-spacing: -0.4px; margin: 64px 0 16px 0;">Methodology</h2>
+        <p style="margin: 0;">We aggregated USGS county-level hardness measurements (most recent survey cycle) to regional means, weighted by household count from Census ACS data. Hardness classes follow the USGS scale: soft (0–3.5 gpg), moderate (3.5–7), hard (7–10.5), very hard (10.5+). County data, weights, and the aggregation script are available on request. Estimated cost effects use the same tier pricing as our <a href="Tool Page Template.dc.html">cost calculator</a>.</p>
+
+        <!-- Citation block -->
+        <div style="margin: 64px 0 0 0; background: #FFFFFF; border: 1px solid #D9DED9; padding: 24px;">
+          <h2 style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 600; font-size: 22px; margin: 0 0 8px 0;">Cite this study</h2>
+          <p style="margin: 0 0 8px 0; font-size: 15px; color: #5B6B75;">Journalists and researchers may reuse our charts with attribution. Copy-ready citation:</p>
+          <pre style="background: #FAFAF7; border: 1px solid #D9DED9; padding: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; margin: 0; white-space: pre-wrap;">Miller, R. (2026). How Hard Is America's Water? A County-Level
+Analysis. SoftWaterSystemCost.com.
+https://softwatersystemcost.com/data/water-hardness-study/</pre>
+        </div>
+
+        <div id="sources" style="margin: 64px 0 0 0; border-top: 1px solid #D9DED9; padding-top: 16px;">
+          <h2 style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 600; font-size: 22px; margin: 0 0 8px 0;">Where these numbers come from</h2>
+          <ol style="margin: 0; padding-left: 24px; font-size: 15px; color: #5B6B75; display: flex; flex-direction: column; gap: 4px;">
+            <li>USGS national water hardness survey, county-level measurements.</li>
+            <li>U.S. Census ACS household counts (regional weighting).</li>
+            <li>SoftWaterSystemCost tier pricing model, Jul 2026.</li>
+          </ol>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <dc-import name="SiteFooter" hint-size="100%,320px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const data = [
+      { name: "Southwest", gpg: 18 },
+      { name: "Great Plains", gpg: 16 },
+      { name: "Midwest", gpg: 14 },
+      { name: "Southeast", gpg: 9 },
+      { name: "Pacific", gpg: 7 },
+      { name: "Northeast", gpg: 4 },
+    ];
+    return {
+      regions: data.map((d) => ({
+        name: d.name,
+        gpg: String(d.gpg),
+        pct: Math.round((d.gpg / 20) * 100) + "%",
+        color: d.gpg >= 10.5 ? "#16303F" : d.gpg >= 7 ? "#5B6B75" : "#1F7A5C",
+      })),
+    };
+  }
+}
+</script>
+</body>
+</html>

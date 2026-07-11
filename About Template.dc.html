@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>About Robert Miller — SoftWaterSystemCost — T7</title>
+<link rel="icon" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&amp;family=Source+Sans+3:wght@400;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #FAFAF7; color: #16303F; font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif; font-size: 18px; line-height: 1.65; }
+  a { color: #16303F; } a:hover { color: #1F7A5C; }
+  :focus-visible { outline: 2px solid #1F7A5C; outline-offset: 2px; }
+</style>
+</helmet>
+<div data-screen-label="About T7">
+  <dc-import name="SiteHeader" hint-size="100%,72px"></dc-import>
+
+  <main style="padding: 0 24px;">
+    <article style="max-width: 720px; margin: 0 auto;">
+      <div style="display: flex; gap: 24px; align-items: center; margin: 40px 0 0 0;">
+        <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="avatar-robert-large" shape="circle" placeholder="line-art avatar" style="width: 120px; height: 120px; flex: 0 0 auto;" hint-size="120px,120px"></x-import>
+        <div>
+          <h1 style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 700; font-size: 44px; line-height: 1.1; letter-spacing: -0.8px; margin: 0;">I priced these systems for 15 years. Now I publish the numbers.</h1>
+        </div>
+      </div>
+
+      <p style="margin: 24px 0 0 0;">I'm Robert Miller. From the mid-2000s I worked as an estimator for plumbing and water-treatment contractors around Daytona Beach — the person who turned a walkthrough of your garage into the number on the quote. I know what a softener install costs to deliver, because writing that cost down was my job.</p>
+      <p style="margin: 16px 0 0 0;">I also watched what happened between my worksheet and the customer's kitchen table. The gap between those two numbers — sometimes <span style="font-family: 'IBM Plex Mono', monospace; font-size: 0.95em; font-variant-numeric: tabular-nums;">$3,000</span> on identical hardware — is why this site exists. Every guide here is built the way I built quotes: line items, ranges, sources.</p>
+
+      <h2 style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 600; font-size: 30px; letter-spacing: -0.4px; margin: 64px 0 16px 0;">What this site does — and doesn't</h2>
+      <ul style="margin: 0; padding-left: 24px; display: flex; flex-direction: column; gap: 8px;">
+        <li>We publish itemized cost ranges with sources for every figure.</li>
+        <li>We <strong>don't sell or install</strong> water treatment systems.</li>
+        <li>We <strong>don't accept sponsored posts</strong> or let any brand review content before publication.</li>
+        <li>We critique pricing opacity, not products — brands are named only with cited, public figures.</li>
+      </ul>
+
+      <h2 style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 600; font-size: 30px; letter-spacing: -0.4px; margin: 64px 0 16px 0;">How we make money</h2>
+      <p style="margin: 0;">This site is reader-supported. If you buy through some links — currently SpringWell, a factory-direct manufacturer we recommend because it publishes its prices — we may earn a commission at no cost to you. That relationship never changes a number on this site: the figures come from the sources listed on each page, and the recommendation predates the commission. The full arrangement is described in our <a href="#">affiliate disclosure</a>.</p>
+
+      <h2 style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 600; font-size: 30px; letter-spacing: -0.4px; margin: 64px 0 16px 0;">Editorial standards</h2>
+      <ul style="margin: 0; padding-left: 24px; display: flex; flex-direction: column; gap: 8px;">
+        <li>Every dollar figure traces to a listed source; estimates are always ranges.</li>
+        <li>Every money page carries a data stamp; figures are re-checked at least twice a year.</li>
+        <li>Claims about health or water quality cite EPA or CDC materials.</li>
+        <li>Corrections are noted in-page. Found an error? Email me.</li>
+      </ul>
+
+      <h2 style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 600; font-size: 30px; letter-spacing: -0.4px; margin: 64px 0 16px 0;">Contact</h2>
+      <p style="margin: 0;">Email: <a href="mailto:robert@softwatersystemcost.com">robert@softwatersystemcost.com</a> — I read everything; quote-review questions get priority.</p>
+      <p style="margin: 16px 0 0 0; font-size: 14px; color: #5B6B75;">SoftWaterSystemCost · 1635 S Ridgewood Ave, 2nd Floor Ste 201, Daytona Beach, FL 32119</p>
+    </article>
+  </main>
+
+  <dc-import name="SiteFooter" hint-size="100%,320px"></dc-import>
+</div>
+</x-dc>
+</body>
+</html>

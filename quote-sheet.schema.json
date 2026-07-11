@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "QuoteSheet",
+  "description": "Content structure for the Quote Sheet partial (spec §3.3). Content team fills one of these per article; template renders it.",
+  "type": "object",
+  "required": ["title", "rows", "dataUpdated"],
+  "properties": {
+    "title": { "type": "string", "description": "e.g. 'Salt-Based Softener, 3-Bath Home'" },
+    "rows": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["item", "low", "high"],
+        "properties": {
+          "item": { "type": "string", "maxLength": 60 },
+          "low":  { "type": "number", "description": "USD, whole dollars" },
+          "high": { "type": "number" }
+        }
+      }
+    },
+    "totalLabel": { "type": "string", "default": "TOTAL INSTALLED" },
+    "dataUpdated": { "type": "string", "description": "e.g. 'July 2026' — feeds the data stamp" },
+    "sourcesAnchor": { "type": "string", "default": "#sources", "description": "anchor to the article's Sources block" }
+  }
+}

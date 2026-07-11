@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Water Softener Cost Calculator — embed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&amp;family=Source+Sans+3:wght@400;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #FAFAF7; color: #16303F; font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif; }
+  a { color: #16303F; } a:hover { color: #1F7A5C; }
+  :focus-visible { outline: 2px solid #1F7A5C; outline-offset: 2px; }
+</style>
+</helmet>
+<div data-screen-label="Embed calculator" data-result="{{ resultJson }}" style="max-width: 680px; margin: 0 auto; background: #FFFFFF; border: 1px solid #D9DED9; box-shadow: 0 1px 2px rgba(22,48,63,.05), 0 16px 40px -20px rgba(22,48,63,.18);">
+  <div style="padding: 16px 24px 0 24px; display: flex; align-items: baseline; gap: 16px;">
+    <span style="font-family: 'Zilla Slab', Georgia, serif; font-weight: 600; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #5B6B75;">Cost estimator</span>
+    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #5B6B75; border: 1px solid #D9DED9; border-radius: 999px; background: #FFFFFF; padding: 4px 12px;">Data updated · Jul 2026</span>
+  </div>
+  <div style="padding: 16px 24px 24px 24px; display: flex; flex-direction: column; gap: 16px;">
+    <div>
+      <label for="e-people" style="display: block; font-weight: 600; font-size: 16px;">How many people live in your home?</label>
+      <div style="display: flex; align-items: center; gap: 16px; margin-top: 4px;">
+        <input id="e-people" type="range" min="1" max="8" step="1" value="{{ people }}" onChange="{{ onPeople }}" style="flex: 1; accent-color: #1F7A5C; min-height: 44px;">
+        <span style="font-family: 'IBM Plex Mono', monospace; font-weight: 500; font-size: 20px; min-width: 32px; text-align: right;">{{ people }}</span>
+      </div>
+    </div>
+    <div>
+      <label for="e-gpg" style="display: block; font-weight: 600; font-size: 16px;">Water hardness (grains per gallon)</label>
+      <div style="display: flex; align-items: center; gap: 16px; margin-top: 4px;">
+        <input id="e-gpg" type="range" min="1" max="30" step="1" value="{{ gpg }}" onChange="{{ onGpg }}" style="flex: 1; accent-color: #1F7A5C; min-height: 44px;">
+        <span style="font-family: 'IBM Plex Mono', monospace; font-weight: 500; font-size: 20px; min-width: 32px; text-align: right;">{{ gpg }}</span>
+      </div>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 16px;">
+      <span style="display: inline-flex; border: 1px solid #D9DED9; border-radius: 10px; overflow: hidden;">
+        <button onClick="{{ setSalt }}" style="font-family: inherit; font-size: 15px; font-weight: 600; padding: 10px 16px; min-height: 44px; border: none; cursor: pointer; background: {{ saltBg }}; color: {{ saltFg }};">Salt-based</button>
+        <button onClick="{{ setSaltFree }}" style="font-family: inherit; font-size: 15px; font-weight: 600; padding: 10px 16px; min-height: 44px; border: none; border-left: 1px solid #D9DED9; cursor: pointer; background: {{ saltFreeBg }}; color: {{ saltFreeFg }};">Salt-free</button>
+      </span>
+      <span style="display: inline-flex; border: 1px solid #D9DED9; border-radius: 10px; overflow: hidden;">
+        <button onClick="{{ setPro }}" style="font-family: inherit; font-size: 15px; font-weight: 600; padding: 10px 16px; min-height: 44px; border: none; cursor: pointer; background: {{ proBg }}; color: {{ proFg }};">A plumber</button>
+        <button onClick="{{ setDiy }}" style="font-family: inherit; font-size: 15px; font-weight: 600; padding: 10px 16px; min-height: 44px; border: none; border-left: 1px solid #D9DED9; cursor: pointer; background: {{ diyBg }}; color: {{ diyFg }};">I'll DIY it</button>
+      </span>
+    </div>
+    <div style="border-top: 1px solid #D9DED9; padding-top: 16px;">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-weight: 500; font-size: 36px; font-variant-numeric: tabular-nums; line-height: 1.1;" ref="{{ resultRef }}">{{ resultText }}</div>
+      <div style="font-size: 14px; color: #5B6B75; margin-top: 4px;">typical installed cost for your inputs · assumes an existing loop</div>
+    </div>
+  </div>
+  <div style="border-top: 1px solid #D9DED9; padding: 8px 24px; font-size: 13px; color: #5B6B75;">Calculator by <a href="Homepage.dc.html" style="color: #5B6B75; font-weight: 600;">SoftWaterSystemCost.com</a></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{ &quot;$preview&quot;: { &quot;width&quot;: &quot;680px&quot;, &quot;height&quot;: &quot;auto&quot; } }">
+class Component extends DCLogic {
+  state = { people: 3, gpg: 12, type: "salt", install: "pro" };
+
+  componentDidMount() {
+    import("./calc-core.js").then((m) => { this.core = m; this.forceUpdate(); });
+  }
+
+  estimate(s) {
+    const opts = { people: s.people, gpg: s.gpg, type: s.type, install: s.install, hasLoop: true };
+    if (this.core) return this.core.estimate(opts);
+    const rows = [];
+    if (s.type === "saltfree") {
+      const sz = s.people <= 3 ? [800, 1800] : [1200, 2800];
+      rows.push({ low: sz[0], high: sz[1] });
+    } else {
+      const weekly = s.people * 75 * s.gpg * 7;
+      const tier = weekly <= 21000 ? 24 : weekly <= 28000 ? 32 : weekly <= 42000 ? 48 : 64;
+      rows.push({ low: { 24: 500, 32: 600, 48: 800, 64: 1000 }[tier], high: { 24: 1100, 32: 1500, 48: 1900, 64: 2400 }[tier] });
+    }
+    if (s.install === "pro") rows.push({ low: 240, high: 620 });
+    else rows.push({ low: 50, high: 150 });
+    if (s.type === "salt") rows.push({ low: 60, high: 180 });
+    return { low: rows.reduce((a, r) => a + r.low, 0), high: rows.reduce((a, r) => a + r.high, 0) };
+  }
+
+  fmt(n) { return "$" + Math.round(n).toLocaleString("en-US"); }
+
+  componentDidUpdate(prevProps, prevState) {
+    const prev = this.estimate(prevState);
+    const now = this.estimate(this.state);
+    if ((prev.low !== now.low || prev.high !== now.high) && this.resultRef && this.resultRef.current) {
+      if (this.cancelCount) this.cancelCount();
+      const node = this.resultRef.current;
+      if (this.core) this.cancelCount = this.core.countUp(prev.low, prev.high, now.low, now.high, (t) => { node.textContent = t; });
+      else node.textContent = this.fmt(now.low) + " \u2013 " + this.fmt(now.high);
+    }
+  }
+
+  renderVals() {
+    const s = this.state;
+    const est = this.estimate(s);
+    this.resultRef = this.resultRef || React.createRef();
+    const seg = (a) => (a ? { bg: "#16303F", fg: "#FAFAF7" } : { bg: "#FFFFFF", fg: "#5B6B75" });
+    const salt = seg(s.type === "salt"), saltFree = seg(s.type === "saltfree");
+    const pro = seg(s.install === "pro"), diy = seg(s.install === "diy");
+    return {
+      people: s.people, gpg: s.gpg,
+      onPeople: (e) => this.setState({ people: +e.target.value }),
+      onGpg: (e) => this.setState({ gpg: +e.target.value }),
+      setSalt: () => this.setState({ type: "salt" }),
+      setSaltFree: () => this.setState({ type: "saltfree" }),
+      setPro: () => this.setState({ install: "pro" }),
+      setDiy: () => this.setState({ install: "diy" }),
+      saltBg: salt.bg, saltFg: salt.fg, saltFreeBg: saltFree.bg, saltFreeFg: saltFree.fg,
+      proBg: pro.bg, proFg: pro.fg, diyBg: diy.bg, diyFg: diy.fg,
+      resultRef: this.resultRef,
+      resultText: this.fmt(est.low) + " \u2013 " + this.fmt(est.high),
+      resultJson: JSON.stringify({ low: est.low, high: est.high, inputs: s }),
+    };
+  }
+}
+</script>
+</body>
+</html>
