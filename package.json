@@ -1,0 +1,15 @@
+{
+  "name": "softwatersystemcost",
+  "version": "1.0.0",
+  "private": true,
+  "description": "softwatersystemcost.com — static site (no build step). QA scripts only.",
+  "type": "module",
+  "scripts": {
+    "qa": "python3 qa/qa_checks.py",
+    "test": "node qa/calc.test.mjs",
+    "check": "npm run qa && npm test"
+  },
+  "devDependencies": {
+    "jsdom": "^24.0.0"
+  }
+}
