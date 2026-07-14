@@ -1,0 +1,167 @@
+{
+  "salt-softener": {
+    "oid": 9,
+    "offer": "Salt Based Water Softener",
+    "url": "https://www.springwellwater.com/product/water-softeners/salt-water-softeners/?oid=9&affid=40"
+  },
+  "salt-free-softener": {
+    "oid": 2,
+    "offer": "Salt Free Water Softener System",
+    "url": "https://www.springwellwater.com/product/water-softeners/salt-free-water-softeners/?oid=2&affid=40"
+  },
+  "futuresoft": {
+    "oid": 33,
+    "offer": "FutureSoft Salt Free Conditioner",
+    "url": "https://www.springwellwater.com/product/water-softeners/salt-free-water-softeners/?oid=33&affid=40"
+  },
+  "filter-salt-softener-combo": {
+    "oid": 10,
+    "offer": "Water Filter and Salt Based Water Softener",
+    "url": "https://www.springwellwater.com/product/dual-systems/water-filter-salt-softener/?oid=10&affid=40"
+  },
+  "filter-saltfree-combo": {
+    "oid": 4,
+    "offer": "Water Filter and Salt-Free Water Softener",
+    "url": "https://www.springwellwater.com/product/dual-systems/water-filter-salt-free-softener/?oid=4&affid=40"
+  },
+  "2in1-combo": {
+    "oid": 21,
+    "offer": "2 in 1 Filter & Salt Softener Combo",
+    "url": "https://www.springwellwater.com/product/dual-systems/2-in-1-filter-salt-softener-combo-system/?oid=21&affid=40"
+  },
+  "well-salt-combo": {
+    "oid": 5,
+    "offer": "Well Water + Salt Based Softener Combo",
+    "url": "https://www.springwellwater.com/product/well-water/well-water-filter-and-salt-based-water-softener/?oid=5&affid=40"
+  },
+  "well-saltfree-combo": {
+    "oid": 6,
+    "offer": "Well Water + Salt Free Softener Combo",
+    "url": "https://www.springwellwater.com/product/well-water/well-water-filter-and-salt-free-water-softener/?oid=6&affid=40"
+  },
+  "ultra-well-combo": {
+    "oid": 14,
+    "offer": "ULTRA Whole House Well Water Filter",
+    "url": "https://www.springwellwater.com/product/well-water/ultra-whole-house-well-water-filter-system-combo/?oid=14&affid=40"
+  },
+  "ultra-well-salt-combo": {
+    "oid": 22,
+    "offer": "ULTRA Whole House Well Water Filter Salt Based System Combo",
+    "url": "https://www.springwellwater.com/product/well-water/ultra-whole-house-well-water-filter-salt-based-system-combo/?oid=22&affid=40"
+  },
+  "test-kit": {
+    "oid": 8,
+    "offer": "Water Testing Kit",
+    "url": "https://www.springwellwater.com/product/water-testing/water-test-kit/?oid=8&affid=40"
+  },
+  "replacement-prefilters": {
+    "oid": 26,
+    "offer": "Replacement Filter",
+    "url": "https://www.springwellwater.com/product/replacements/5-micron-sediment-filters-with-o-rings-and-lube-2-pack/?oid=26&affid=40"
+  },
+  "sediment-canister": {
+    "oid": 23,
+    "offer": "Sediment Filter Canister + 5 Micron",
+    "url": "https://www.springwellwater.com/product/replacements/pre-filter-canister-5-micron-filter/?oid=23&affid=40"
+  },
+  "spin-down-sediment": {
+    "oid": 13,
+    "offer": "Spin Down Sediment Filter",
+    "url": "https://www.springwellwater.com/product/replacements/spin-down-sediment-filter/?oid=13&affid=40"
+  },
+  "whole-house-filter": {
+    "oid": 1,
+    "offer": "Whole House Water Filtration System",
+    "url": "https://www.springwellwater.com/product/water-filters/whole-house-water-filters/?oid=1&affid=40"
+  },
+  "carbon-cartridge": {
+    "oid": 27,
+    "offer": "Whole House Carbon Cartridge System",
+    "url": "https://www.springwellwater.com/product/water-filters/whole-house-cartridge-system/?oid=27&affid=40"
+  },
+  "iron-filter": {
+    "oid": 3,
+    "offer": "Well Water Filtration System",
+    "url": "https://www.springwellwater.com/product/well-water/whole-house-iron-filter/?oid=3&affid=40"
+  },
+  "uv-purification": {
+    "oid": 12,
+    "offer": "UV Water Purification",
+    "url": "https://www.springwellwater.com/product/uv-systems/uv-water-purification/?oid=12&affid=40"
+  },
+  "ph-neutralizer": {
+    "oid": 18,
+    "offer": "Calcite pH Neutralizer",
+    "url": "https://www.springwellwater.com/product/well-water/calcite-ph-neutralizer/?oid=18&affid=40"
+  },
+  "chemical-injection": {
+    "oid": 19,
+    "offer": "Chemical Injection System",
+    "url": "https://www.springwellwater.com/product/well-water/chemical-injection-system/?oid=19&affid=40"
+  },
+  "tannin-softener": {
+    "oid": 20,
+    "offer": "Tannin Softener System",
+    "url": "https://www.springwellwater.com/product/water-filters/tannin-softener-system/?oid=20&affid=40"
+  },
+  "lead-cyst": {
+    "oid": 7,
+    "offer": "Whole House Lead & Cyst Removal System",
+    "url": "https://www.springwellwater.com/product/water-filters/whole-house-lead-cyst-removal-system/?oid=7&affid=40"
+  },
+  "pfas-filter": {
+    "oid": 37,
+    "offer": "PFAS Water Filter System",
+    "url": "https://www.springwellwater.com/product/water-filters/whole-home-pfas-filter/?oid=37&affid=40"
+  },
+  "moen-ro": {
+    "oid": 34,
+    "offer": "Moen RO Filtration System",
+    "url": "https://www.springwellwater.com/product/under-sink-filtration/moen-reverse-osmosis-water-filtration-system/?oid=34&affid=40"
+  },
+  "moen-ro-under-counter": {
+    "oid": 11,
+    "offer": "Reverse Osmosis System",
+    "url": "https://www.springwellwater.com/product/under-counter-filtration/moen-reverse-osmosis-water-filtration-system/?oid=11&affid=40"
+  },
+  "moen-ro-sip": {
+    "oid": 36,
+    "offer": "Moen RO and Sip Bundle",
+    "url": "https://www.springwellwater.com/product/under-sink-filtration/moen-reverse-osmosis-water-filtration-system-with-sip-faucet-bundle/?oid=36&affid=40"
+  },
+  "flo-monitor": {
+    "oid": 29,
+    "offer": "Flo Smart Water Monitor & Shutoff",
+    "url": "https://www.springwellwater.com/product/smart-water/flo-smart-water-monitor-shutoff/?oid=29&affid=40"
+  },
+  "softeners": {
+    "oid": 16,
+    "offer": "Water Softener Category Page",
+    "url": "https://www.springwellwater.com/product-category/water-softeners?oid=16&affid=40"
+  },
+  "well-water": {
+    "oid": 15,
+    "offer": "Well Water Filter Category",
+    "url": "https://www.springwellwater.com/product-category/well-water?oid=15&affid=40"
+  },
+  "shop": {
+    "oid": 25,
+    "offer": "List of All Products",
+    "url": "https://www.springwellwater.com/shop/?oid=25&affid=40"
+  },
+  "reviews": {
+    "oid": 30,
+    "offer": "Customer Review Page",
+    "url": "https://www.springwellwater.com/reviews/?oid=30&affid=40"
+  },
+  "springwell": {
+    "oid": 24,
+    "offer": "Springwell Home Page",
+    "url": "https://www.springwellwater.com/?oid=24&affid=40"
+  },
+  "filter-comparison": {
+    "oid": 28,
+    "offer": "Whole House Carbon vs. Cartridge Comparison Page",
+    "url": "https://www.springwellwater.com/whole-house-carbon-filter-vs-cartridge-filter-compared/?oid=28&affid=40"
+  }
+}
